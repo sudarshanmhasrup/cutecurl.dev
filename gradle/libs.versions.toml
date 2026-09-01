@@ -2,6 +2,10 @@
 # Library and plugin versions
 kotlin = "2.4.10"
 
+# backend module's configuration information
+backend-group = "dev.cutecurl.app"
+backend-version = "1.0.0"
+
 [libraries]
 
 [bundles]
