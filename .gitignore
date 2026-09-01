@@ -6,3 +6,6 @@
 
 # Kotlin cache folder
 .kotlin
+
+# Build output folder
+.build
