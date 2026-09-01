@@ -3,3 +3,6 @@
 
 # Gradle cache folder
 .gradle
+
+# Kotlin cache folder
+.kotlin
