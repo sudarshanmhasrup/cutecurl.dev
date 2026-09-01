@@ -39,3 +39,14 @@ gradle.beforeProject {
         layout.buildDirectory.set(rootProject.layout.projectDirectory.dir(".build/project"))
     }
 }
+
+val individualModules = setOf("backend")
+individualModules.forEach { module ->
+    include(":$module")
+}
+
+gradle.beforeProject {
+    if (name in individualModules) {
+        layout.buildDirectory.set(rootProject.layout.projectDirectory.dir(".build/$name"))
+    }
+}
